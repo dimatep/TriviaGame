@@ -7,4 +7,4 @@ Android Trivia Game Application using MySQL DB and local server that created on 
 * Enter your name.
 * Choose difficulty and Play.
 
-*to see the high score table you must be logged in
+__To see the highscore table you must be logged in to server__
