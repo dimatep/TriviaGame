@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bgapp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/logo_image"
+        android:src="@drawable/trivia_logo"/>
+
+    <ImageView
+        android:id="@+id/highscore_icon"
+        android:layout_width="50dp"
+        android:padding="3dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo_image"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/highscore_icon"/>
+
+    <Button
+        android:id="@+id/high_score_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/logo_image"
+        android:layout_toEndOf="@+id/highscore_icon"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/newgame_btn_style"
+        android:textAllCaps="false"
+        android:text="High Scores"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/high_score_btn"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/user_icon"
+        android:background="@drawable/newgame_btn_style"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="23sp"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name_input"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/user_icon"
+        android:background="@drawable/newgame_btn_style"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="23sp"/>
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/user_icon"
+        android:layout_marginStart="70dp"
+        android:padding="4dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/login_icon" />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/high_score_btn"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/usericon" />
+
+    <ImageView
+        android:id="@+id/difficulty_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_icon"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:src="@drawable/difficulty_icon"/>
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/difficulty_spinner"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/difficulty_icon"
+        android:background="@drawable/newgame_btn_style"
+        android:layout_below="@+id/login_btn"
+        android:textAlignment="center">
+    </Spinner>
+
+    <ImageButton
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@null"
+        android:src="@drawable/shape_selector"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/new_game_btn"
+        android:layout_below="@+id/difficulty_spinner"/>
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:src="@drawable/info_shape_selector"
+        android:layout_gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/info_btn"/>
+
+</RelativeLayout>
